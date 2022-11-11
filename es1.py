@@ -155,4 +155,93 @@ print("#########")
 thislist = ["apple", "banana", "cherry"]
 print(thislist)
 
+print("############")
+#Gli elenchi consentono valori duplicati
+thislist = ["apple", "banana", "cherry", "apple", "cherry"]
+print(thislist)
+
+print ("##########")
+#Stampa il numero di elementi nell'elenco
+thislist = ["apple", "banana", "cherry"]
+print(len(thislist))
+
+print ("##############")
+#Gli elementi dell'elenco possono essere di qualsiasi tipo di dati:stringa, int e booleano
+list1 = ["apple", "banana", "cherry"]
+list2 = [1, 5, 7, 9, 3]
+list3 = [True, False, False]
+
+print(list1)
+print(list2)
+print(list3)
+
+print ("###############")
+#Un elenco può contenere diversi tipi di dati
+list1 = ["abc", 34, True, 40, "male"]
+print (list1)
+
+print ("############")
+#per stampare il nome della classe a cui appartiene:
+mylist = ["apple", "banana", "cherry"]
+print(type(mylist))
+
+print ("############")
+#È anche possibile utilizzare il costruttore list() per creare un elenco:
+thislist = list(("apple", "banana", "cherry"))
+print(thislist)
+
+print ("##########")
+#Stampa solo una voce della lista (es:la seconda "banana")
+thislist = ["apple", "banana", "cherry"]
+print(thislist[1])
+
+print ("#############")
+#Indicizzazione negativa significa iniziare dalla fine:-1si riferisce all'ultimo elemento, -2si riferisce al penultimo elemento ecc.
+thislist = ["apple", "banana", "cherry"]
+print(thislist[-1])
+
+print("###########")
+#È possibile specicare da dove iniziare e dove terminare l'intervallo ( la ricerca inizierà all'indice 2 (incluso) e terminerà all'indice 5 (non incluso)
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[2:5])
+
+print("############")
+# il primo elemento ha indice 0
+#Questo esempio restituisce gli elementi dall'inizio a, ma NON incluso, "kiwi"
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[:4])
+
+print ("########")
+#Questo esempio restituisce gli elementi da "ciliegia" alla fine
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[2:])
+
+print ("#####")
+#Questo esempio restituisce gli elementi da "orange" (-4) a, ma NON include "mango" (-1)
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[-4:-1])
+
+print("##########")
+#Per determinare se un elemento specifico è presente in un elenco, utilizzare la "in" parola chiave
+thislist = ["apple", "banana", "cherry"]
+if "apple" in thislist:
+  print("Yes, 'apple' is in the fruits list")
+
+print("########")
+#Per modificare il valore di un articolo specifico, fare riferimento al numero di indice
+thislist = ["apple", "banana", "cherry"]
+thislist[1] = "blackcurrant"
+print(thislist)
+
+
+
+
+
+
+
+
+
+
+
+
 
